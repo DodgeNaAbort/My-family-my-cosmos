@@ -1,0 +1,352 @@
+/* Базовые стили */
+:root {
+    --primary-color: #1a1a1a; /* Темный фон */
+    --secondary-color: #ffffff; /* Белый текст */
+    --accent-color: #ffcc00; /* Акцентный цвет (желтый) */
+}
+.light-theme {
+    --primary-color: #ffffff;
+    --secondary-color: #1a1a1a;
+    --accent-color: #ff6600;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.header__logo img {
+    height: 50px;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list li {
+    margin-left: 20px;
+}
+
+.nav__list a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav__list a:hover {
+    color: var(--accent-color);
+}
+
+.header__theme-toggle button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.header__theme-toggle button:hover {
+    color: var(--accent-color);
+}
+
+.header__burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.header__burger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 4px 0;
+}
+
+.search {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+
+.slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.slider__container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider__slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+.slider__slide.active {
+    display: block;
+}
+
+.slider__slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slide__content {
+    padding: 20px;
+    text-align: center;
+}
+
+.slide__content h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.slide__content p {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.slide__rating {
+    margin: 10px 0;
+    color: var(--accent-color);
+}
+
+.slide__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.slide__button:hover {
+    background-color: #e6b800;
+}
+
+.slider__indicators {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.search-area button {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.indicator.active {
+    background-color: var(--accent-color);
+}
+/* Секция авторизации */
+.auth {
+    padding: 40px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.auth__container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.auth h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.auth__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form__group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form__group input {
+    box-sizing: border-box;
+    min-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.form__button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form__button:hover {
+    background-color: #e6b800;
+}
+
+.form__link {
+    display: block;
+    margin-top: 10px;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+/* Секция "О нас" */
+.about {
+    padding: 40px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about__content {
+    flex: 1;
+}
+
+.about__content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about__content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about__image {
+    flex: 1;
+    text-align: center;
+}
+
+.about__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .about__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about__content h2 {
+        font-size: 20px;
+    }
+
+    .about__content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth h2 {
+        font-size: 20px;
+    }
+
+    .form__group input {
+        font-size: 14px;
+    }
+
+    .form__button {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .slider__slide img {
+        height: 200px;
+    }
+
+    .slide__content h3 {
+        font-size: 20px;
+    }
+
+    .slide__content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: var(--primary-color);
+        padding: 10px;
+        border: 1px solid var(--accent-color);
+    }
+
+    .nav__list.active {
+        display: flex;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+}
