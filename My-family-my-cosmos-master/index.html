@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Моя семья - мой космос</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li><a href="register.html">Регистрация</a></li>
+                <li><a href="#auth">Авторизация</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+                <li><a href="contest.html">О нас</a></li>
+                <li><a href="#about">Конкурсы</a></li>
+                <li><a href="#search">Поиск</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header__theme-toggle">
+            <button id="theme-toggle">🌙</button>
+        </div>
+        <div class="header__burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <section class="search" id="search">
+            <div class="search-area">
+                <label for="search-input">Поиск:</label>
+                <input type="text" name="search-input" id="search-input" />
+                <button type="submit">Найти</button>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about__container">
+                <div class="about__content">
+                    <h2>О нас</h2>
+                    <p>Мы — команда энтузиастов, которые любят космос и верят, что семья — это самое важное в жизни. Наше мероприятие "Моя семья — мой космос" объединяет эти две темы, предлагая увлекательные конкурсы и активности для всей семьи. Присоединяйтесь к нам и окунитесь в мир космических приключений!</p>
+                </div>
+                <div class="about__image">
+
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="slider__container">
+                <div class="slider__slide active">
+                    <img src="media/img/competition1.jpg" alt="Конкурс 1">
+                    <div class="slide__content">
+                        <h3>Космический квест</h3>
+                        <p>Увлекательное путешествие по планетам для всей семьи!</p>
+                        <div class="slide__rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                        </div>
+                        <a href="competition.html" class="slide__button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <img src="media/img/competition2.jpg" alt="Конкурс 2">
+                    <div class="slide__content">
+                        <h3>Ракетостроение</h3>
+                        <p>Создайте свою ракету и запустите ее в космос!</p>
+                        <div class="slide__rating">
+                            <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+                        </div>
+                        <a href="competition.html" class="slide__button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <img src="media/img/competition3.jpg" alt="Конкурс 3">
+                    <div class="slide__content">
+                        <h3>Космический рисунок</h3>
+                        <p>Нарисуйте свою галактику и выиграйте призы!</p>
+                        <div class="slide__rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <a href="competition.html" class="slide__button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </section>
+        <section class="video">
+            <div class="video-container">
+                <h2>
+                    Приветствие от организаторов.
+                </h2>
+                <video controls  preload="auto" autoplay muted loop>
+                    <source src="" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </section>
+        <section class="auth" id="auth">
+            <div class="auth__container">
+                <h2>Авторизация</h2>
+                <form class="auth__form">
+                    <div class="form__group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="form__button">Войти</button>
+                    <a href="#forgot-password" class="form__link">Забыли пароль?</a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contacts">
+            <a href="tel:+74842234567">+74842234567</a>    
+            <a href="mailto:family@cosmos.ru">family@cosmos.ru</a> 
+            <ul class="footer__list">
+                <li><a href="register.html">Регистрация</a></li>
+                <li><a href="#auth">Авторизация</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+                <li><a href="contest.html">О нас</a></li>
+                <li><a href="#about">Конкурсы</a></li>
+                <li><a href="#search">Поиск</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
